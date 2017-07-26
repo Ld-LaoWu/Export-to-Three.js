@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+## Export-to-Three.js
 
-You can use the [editor on GitHub](https://github.com/LucasEvanHello/Export-to-Three.js/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Export the unity3d scene to the Three.js load call.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Support export：
 
-### Markdown
+  •Vertexs
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  •UVs
 
-```markdown
-Syntax highlighted code block
+  •Normals
 
-# Header 1
-## Header 2
-### Header 3
+  •Textures
 
-- Bulleted
-- List
+  •Collider
 
-1. Numbered
-2. List
+  •Cameras
 
-**Bold** and _Italic_ and `Code` text
+  •Animations (currently supported, position, scale,rotation animation, character animation are not supported for the time being)
+  
+  •Lights
+  
+  •Lighting map (supports unity3d itself, baking light maps, and also supports baking from 3D software, exporting the baked lighting map)
+  
+  •Material (supports multidimensional child material export, and supports multidimensional sub - material along with lighting map at the same time)
+  
+  •Skybox
+  
+  •Fog
+  
+  •LOD
+  
+  •Data compression (support for multiple data format compression)
+  
+  •Batch export, batch dynamic loading
 
-[Link](url) and ![Image](src)
-```
+Three.js load mode using THREE.ObjectLoader (), for detailed use, please refer to the Demo file
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LucasEvanHello/Export-to-Three.js/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Upcoming support for character animation export
